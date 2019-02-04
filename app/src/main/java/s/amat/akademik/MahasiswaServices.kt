@@ -14,6 +14,9 @@ interface MahasiswaServices {
     @GET("mahasiswa")
     fun getData(@Query("nim") nim:String):Call<MahasiswaResponse>
 
+    @GET("category")
+    fun getData():Call<CategoryResponse>
+
 
     @FormUrlEncoded
     @POST("mahasiswa")
